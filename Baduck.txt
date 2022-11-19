@@ -1,0 +1,17 @@
+Note: These rules adapted from the Tromp-Taylor rules of go, which can be found at http://tromp.github.io/go.html.
+Baduck is played on a 19-by-19 square grid of points by two players called Black and White.
+Each point on the grid may be colored black, white, duck, or empty.
+A point P is said to reach C if P is not itself colored C, and there is a path of vertically or horizontally adjacent points of P's color from P to a point of color C.
+Clearing a color is the process of emptying all points of that color that don't reach empty.
+Moving the duck is the process of emptying all points colored duck and then changing a different empty point's color to duck.
+The players start by attempting to agree on a half-integer which is called komi. If the players do not agree, komi is 7 plus 1/2.
+After agreeing on the value of komi, the players alternate turns, starting with Black.
+A turn is either a pass or a move.
+A move consists of the following: coloring an empty point one's own color, moving the duck, and clearing the opponent color.
+Two grid colorings are considered equivalent if every point that is colored black in the one is colored black in the other, and vice versa, and every point that is colored white in the one is colored white in the other, and vice versa.
+It is illegal to make a move in such a way that the grid coloring after the move is equivalent to one that was previously present.
+It is illegal for a player to make a move in such a way that after the move, there is a point of the player's own color which does not reach empty.
+After two consecutive passes, all points colored duck are emptied. This ends the game.
+Black's score is the number of points colored black plus the number of empty points that reach only black.
+White's score is the number of points colored white plus the number of empty points that reach only white plus komi.
+The player with the higher score wins the game.
