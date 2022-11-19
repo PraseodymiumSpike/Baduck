@@ -1,5 +1,7 @@
 # Baduck
-a program you can use to play Baduck, my variant of weiqi
+Baduck.lua is a program you can use to play Baduck, my variant of weiqi.
+
+rules can be found in the Baduck.txt file
 
 NOTE: Pay attention to whose Turn it is! If the same Player comes up twice, that's because they made an illegal or invalid move, Mnd they must enter a legal one! Remember that Passing is always legal!
 
