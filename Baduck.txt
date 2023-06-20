@@ -5,7 +5,7 @@ A point P is said to reach C if P is not itself colored C, and there is a path o
 Clearing a color is the process of emptying all points of that color that don't reach empty.
 Moving the duck is the process of emptying all points colored duck and then changing a different empty point's color to duck.
 The players start by attempting to agree on a half-integer which is called komi. If the players do not agree, komi is 7 plus 1/2.
-After agreeing on the value of komi, the players alternate turns, starting with Black.
+After komi is decided, the players alternate turns, starting with Black.
 A turn is either a pass or a move.
 A move consists of the following: coloring an empty point one's own color, moving the duck, and clearing the opponent color.
 Two grid colorings are considered equivalent if every point that is colored black in the one is colored black in the other, and vice versa, and every point that is colored white in the one is colored white in the other, and vice versa.
